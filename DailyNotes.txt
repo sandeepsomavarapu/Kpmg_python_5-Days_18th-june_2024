@@ -1,0 +1,169 @@
+
+
+Language:
+===========
+		Communication with human
+		
+Programming Language:
+====================
+
+		communication with machine
+		
+							software--->set of programs --->set of instructions
+
+
+
+Simple
+
+		Guido Van Rossam --1989 -->1991
+		
+			1.x feb 20th
+
+			3.12.3
+			3.12.4
+
+
+		the complete monty python circus
+
+
+Functional Programming copied  from C 
+OOP copied from C++
+modular programing Modula-3
+shell scripting shellscript
+
+different areas :
+=================
+
+1)standalone /desktop apps		notepad++,eclipse,vscode,media players,anti virus   Core python
+2)database apps					Mysql	PDBC
+3)web apps						 gmail,amazon... Django/flask
+4)networking programing			
+5)AI			
+6)Ml
+7)DS
+8)IOT 
+9)gaming apps ...........
+
+
+python features:
+=================
+
+	1.simple and easy to learn
+	
+
+import keyword
+>>> keyword.kwlist
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def',
+ 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda',
+ 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+	2.freeware and open source
+			source 
+				jython
+				
+	3.platform independent 
+	
+			.net --->microsoft-->machine1(mac) -->machine2(windows)
+			python
+			java
+	4.portable
+	
+	5.	Dynamic Typed python		age=21  age="sandeep"
+		static typed  java		int age=89;
+	
+	6.OOP
+	
+	7.Rich Library
+			
+		
+Identifiers:
+===========
+Any name in python will cal it as identifier		
+		
+		classname ,variable,method,module name,.....
+		
+			a-z
+			A-Z
+			0-9
+			_
+		
+Variables:
+===========
+age=444		dynamic typed
+		
+		local variable
+		global variable
+		
+	""
+	
+Datatypes:
+=========	
+		1)int
+		2)float
+		3)str
+		4)bool
+		5)complex
+		6)range
+		
+
+		7)List
+		8)Tuple
+		9)Set
+		10)frozenset
+		11)dict
+		12)None
+		
+		
+		
+		print()
+		type()
+		id()
+		input()
+		
+		int()
+		bool()
+		str()
+		float()
+		complex()
+	
+String:
+=======	''  "" ''' ''' """ """
+
+welcome.py
+
+
+PVM
+
+visual studio code
+
+
+
+
+ctrl+/ to comments and remove comments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
