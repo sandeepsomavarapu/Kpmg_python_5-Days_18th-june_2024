@@ -20,7 +20,7 @@ Simple
 			1.x feb 20th
 
 			3.12.3
-			3.12.4
+			3.12.4   python.org
 
 
 		the complete monty python circus
@@ -34,7 +34,7 @@ shell scripting shellscript
 different areas :
 =================
 
-1)standalone /desktop apps		notepad++,eclipse,vscode,media players,anti virus   Core python
+1)standalone /desktop apps		notepad++,eclipse,vscode,media players,anti virus   Core python,tkinter
 2)database apps					Mysql	PDBC
 3)web apps						 gmail,amazon... Django/flask
 4)networking programing			
@@ -61,7 +61,7 @@ import keyword
 			source 
 				jython
 				
-	3.platform independent 
+	3.platform independent WORA
 	
 			.net --->microsoft-->machine1(mac) -->machine2(windows)
 			python
@@ -139,19 +139,324 @@ visual studio code
 
 
 
-ctrl+/ to comments and remove comments
+ctrl+/ to comments and remove commentss
 
 
+Day-1 Shell:
+============
+>>> print("welcome to python")
+welcome to python
+>>> a=123
+>>> import keyword
+>>> keyword.kwlist
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+>>> a=123
+>>> print(a)
+123
+>>> name="welcome to python"
+>>> print(name)
+welcome to python
+>>> print(name)
+welcome to python
+>>> print(name)
+welcome to python
+>>> name1='suresh'
+>>> print(name1)
+suresh
+>>> 2name='mahesh'
+  File "<stdin>", line 1
+    2name='mahesh'
+    ^
+SyntaxError: invalid decimal literal
+>>> a1name='rajesh'
+>>> my@gmail='sandeep'
+  File "<stdin>", line 1
+    my@gmail='sandeep'
+    ^^^^^^^^
+SyntaxError: cannot assign to expression here. Maybe you meant '==' instead of '='?
+>>> _cash_india='rupee'
+>>> _ca$h_india='rupee'
+  File "<stdin>", line 1
+    _ca$h_india='rupee'
+       ^
+SyntaxError: invalid syntax
+>>> name="welcome to python"
+>>> print(name)
+welcome to python
+>>> type(name)
+<class 'str'>
+>>> a=123
+>>> type(a)
+<class 'int'>
+>>> salary=23.43221
+>>> type(salary)
+<class 'float'>
+>>> result=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined. Did you mean: 'True'?
+>>> result=True
+>>> type(result)
+<class 'bool'>
+>>> data=3+5j
+>>> type(data)
+<class 'complex'>
+>>> name=input("Enter your name")
+Enter your nameKPMG
+>>> print(name)
+KPMG
+>>> type(name)
+<class 'str'>
+>>> name=123
+>>> type(name)
+<class 'int'>
+>>> id(name)
+140716553331304
+>>> a=234
+>>> id(a)
+140716553334856
+>>> name=int(input("Enter your name"))
+Enter your nameasdasdasd
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'asdasdasd'
+>>> fnum=input("enter first number for addition")
+enter first number for addition123
+>>> snum=input("enter second number for addition")
+enter second number for addition234
+>>> result=fnum+snum
+>>> print(result)
+123234
+>>> fnum=int(input("enter first number for addition"))
+enter first number for addition222
+>>> type(fnum)
+<class 'int'>
+>>> snum=int(input("enter second number for addition"))
+enter second number for addition111
+>>> result=fnum+snum
+>>> print(result)
+333
+>>> int(212.321)
+212
+>>> int(21+5j)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
+>>> int(True)
+1
+>>> int(False)
+0
+>>> int("12")
+12
+>>> int("10")
+10
+>>> int("ten")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'ten'
+>>> float(23)
+23.0
+>>> float(23+6j)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: float() argument must be a string or a real number, not 'complex'
+>>> float(True)
+1.0
+>>> float(False)
+0.0
+>>> float("12")
+12.0
+>>> float("sandeep")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: could not convert string to float: 'sandeep'
+>>> data=3+6j
+>>> data.real
+3.0
+>>> data.ima
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'complex' object has no attribute 'ima'. Did you mean: 'imag'?
+>>> data.imag
+6.0
+>>> complex(10)
+(10+0j)
+>>> complex(1.3)
+(1.3+0j)
+>>> complex(True)
+(1+0j)
+>>> bool(0)
+False
+>>> bool(1)
+True
+>>> bool(2)
+True
+>>> bool(200)
+True
+>>> bool(00)
+False
+>>> bool(0.21)
+True
+>>> bool(0.0)
+False
+>>> bool(0.2)
+True
+>>> bool(-23)
+True
+>>> bool("")
+False
+>>> bool("True")
+True
+>>> bool("False")
+True
+>>> bool("false")
+True
+>>> bool(" ")
+True
+>>> str(12)
+'12'
+>>> str(12.32)
+'12.32'
+>>> str(12+4j)
+'(12+4j)'
+>>> str(True)
+'True'
+>>> orgname='kpmg india "hyderabad"'
+>>> print(orgname)
+kpmg india "hyderabad"
+>>> orgname="kpmg india "hyderabad"
+  File "<stdin>", line 1
+    orgname="kpmg india "hyderabad"
+                                  ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> orgname="kpmg india 'hyderabad'"
+>>> print(orgname)
+kpmg india 'hyderabad'
+>>> orgname='kpmg india hyderabad banglore kpmg'
+>>> orgname[0:2]
+'kp'
+>>> orgname[0:]
+'kpmg india hyderabad banglore kpmg'
+>>> orgname[:5]
+'kpmg '
+>>> orgname[-2]
+'m'
+>>> orgname[-7]
+'r'
+>>> orgname[-7:-1]
+'re kpm'
+>>> orgname[56]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> len(orgname)
+34
+>>> orgname[36]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> orgname[35]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> orgname[34]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> orgname[33]
+'g'
+>>> orgname[30:78]
+'kpmg'
+
+int,float,bool,str,complex--->imuttable
+
+		one value DT
+		
+		
+if we have requirement to represent group of values/objects as a single entity		
+		
+	List
+	tuple
+	set
+	frozenset
+	dict
+	
+List:-
+=====
+if we want to represent group of values/objects as a single entity	where
+
+	1)duplicates are allowed
+	2)insertion order preserved
+	3)both Homogeneous and Haterogeneous objects are allowed   
+	4)Growable in nature     10-->16-->25  (cc*3/2)+1
+	5)[] 
+	6)muttable
+	
+Tuple:-
+======	
+if we want to represent group of values/objects as a single entity	where
+
+	1)duplicates are allowed
+	2)insertion order preserved
+	3)both Homogeneous and Haterogeneous objects are allowed   
+	4)not Growable in nature  
+	5)()
+	6)imuttable
+
+Set:-
+======
+if we want to represent group of values/objects as a single entity	where
+
+	1)duplicates are not allowed
+	2)insertion order not preserved
+	3)both Homogeneous and Haterogeneous objects are allowed   
+	4)Growable in nature    
+	5){}
+	6)muttable
+	
+FrozenSet:
+==========	
+
+if we want to represent group of values/objects as a single entity	where
+
+	1)duplicates are not allowed
+	2)insertion order not preserved
+	3)both Homogeneous and Haterogeneous objects are allowed   
+	4)not Growable in nature    
+	5)frozenset({})
+	6)imuttable
+	
+Dict:
+=====
+
+if we want to represent group of values/objects as a kye,value
+
+			123:suresh  --->entry/item
+			123:ramesh ---> 
+
+	1)key must be unique
+	2)value can be duplicate
+	3)if we pass duplicate key ,it will override the first value
+	4)key & value can be any DT
+	5)muttable
 
 
+function/method
+================
+reusability
 
 
+	def addOfTwo(a,b):			#parameterized function
+			...
+			...
+			...
 
+	def  sayHello():
+			print("hello everyone!!!!")
 
-
-
-
-
+	def message():
+		result=a+b
+		return "welcome to function"
 
 
 
