@@ -459,16 +459,99 @@ reusability
 		return "welcome to function"
 
 
+ Functional Programming 
+
+	lambda   
+	
+	
+		def addition(a,b):
+			result=a+b
+			return result
+
+		addition(2,3)
+
+		lambda args:expression
+
+		ex=lambda a,b:a+b
+		lambda :a+b
+
+		ex(12,13)
+		ex(22,11)
+
+	open("filename",mode)	w/r/a/x/b
+	
+	write()
+	
+	read()
+
+OOPS-->python
+
+class 
+	variables data members
+	methods	member functions
+
+object
+
+Employee
+
+	id
+	name
+	sal
+	
+	working
+	reporting.....
+
+class Employee:
+	eid=111
+	ename='suersh'
+	
+	def reporting(self,eid,ename):		#self 112
+		print(eid)
+		self.eid=eid
+		
+	def __init__(self):
+		
+		
+		
+emp=Employee()		#constructor calling  PVM
+
+emp.reporting(123,'mahesh')
+
+Object--->instantiation
 
 
+inheritance:
+============
+		Code Reusability
 
+class Test:
 
+	display		
+	
+	
+	
+class X(Test):			class Y(Test):	
+	
+	m1						m2
 
+	
+x =X()
+x.m1()
+x.display()
 
+  class Test			class Client
+		m2					m2
+  
+  
+  
+  
+			class Child(Client,Test)
 
+				m3
+				
+				
+			c=Child();
+			c.m2()
 
-
-
-
-
+			
 
