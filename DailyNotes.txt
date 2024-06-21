@@ -553,5 +553,140 @@ x.display()
 			c=Child();
 			c.m2()
 
-			
+Exception Handling:
+===================
+Exception handling is a mechanisam of converting system defined error messages into user friendly error messages .
 
+		invalid input-->error-->user friendly error message 
+
+with out exception handling 
+
+1)system defined error messages 
+2)abnormal termination								
+								
+								
+								
+		app.py
+		
+	1
+	2	---->abnormal termination
+	3
+	4
+	5
+	
+	
+with exception handling 
+
+1)user friendly error messages
+2)normal termination	
+
+
+		try		-->error code /risky code
+		
+		except  -->handling code 
+		
+		finally -->clean up code 
+			
+				it will execute always whether exception is raised or not whether exception is handled or not
+		
+		raise  to raise an exception explicitly 
+		
+								BaseException
+								Exception
+SyntaxError								
+ValueError
+TypeError
+NameError
+AttributeError
+ZeroDivisionError
+IndexError
+FileNotFindError
+KeyError
+IOError
+ImportError
+.......
+
+
+
+
+1 opened file 
+
+2 reading --->error
+
+3.close()
+
+
+		Raise -->
+
+user defined exception
+					
+class MyException(BaseException):
+	def __init__(self,message):
+		print(message)
+
+class MyException(Exception):
+	
+
+
+
+			try	:			invalid	
+				...
+				
+			except:			invalid
+
+
+			finally:		invalid
+
+			try:
+							valid
+			except:
+
+			try
+			except
+			except			valid
+			except
+
+
+			try 			valid
+			finally
+
+			
+			try
+			finally			invalid
+			except
+
+			try
+			except			valid
+			finally
+			
+			
+			try
+			except
+			else			valid
+			finally
+			
+			try
+			except
+			finally			invalid
+			finally	
+			
+			try
+			print()			invalid	
+			except
+			finally
+			
+			
+			try
+				try
+				except			valid
+				finally
+			except	
+			
+			
+			
+			try
+			
+			except
+				try
+				except
+				finally
