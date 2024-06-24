@@ -619,15 +619,18 @@ ImportError
 		Raise -->
 
 user defined exception
-					
-class MyException(BaseException):
+				
+		1.take one class make that as child class anyone of the parent exception class		
+		2.inside that exception class take one parameterized constructor
+				
+class MyException(Exception):
 	def __init__(self,message):
 		print(message)
 
 class MyException(Exception):
 	
 
-
+		raise MyException
 
 			try	:			invalid	
 				...
@@ -686,7 +689,79 @@ class MyException(Exception):
 			
 			try
 			
-			except
+			except				valid
 				try
 				except
 				finally
+				
+Regular Expression:
+===================
+
+		validation---> 		password,cpassword
+		
+		exception--->username,password -->
+
+
+
+					
+			gmail login				java
+			
+			email			--->			jdbc --->Database
+			password
+
+				login	
+
+
+							home
+
+
+			registration page
+											python
+				password	x	--->					---> Database
+				cpassword	y
+				username   
+				register
+
+
+RE-->
+
+import re
+
+			compile
+			finditer
+			search
+			match
+			fullmatch
+			start
+			end
+			group
+			sub
+			subn
+			split
+
+
+Pickling / Unpickling
+
+Serialization/de-serialization
+
+		open	-->rb/wb
+		read
+		close()
+
+
+	the process of converting object data to byte data is called pickling
+	
+	the process of converting byte data to object data is called un-pickling
+
+		class Employee:
+		
+			
+		
+		
+		
+		
+		emp=Employee(123,'suresh',9000,'admin');  ----> binary/byte
+
+
+			
+				
