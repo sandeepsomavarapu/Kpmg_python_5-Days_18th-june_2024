@@ -763,5 +763,111 @@ Serialization/de-serialization
 		emp=Employee(123,'suresh',9000,'admin');  ----> binary/byte
 
 
-			
+modules:
+==========	
+
+
+
+mymodule.py
+
+x=123
+def add(a,b):
+	print("add of two :",a+b)
+
+
+myex.py
+import mymodule
+import mymodule,mymodule1,mymodule2
+import mymodule as m
+from mymodule import add
+from mymodule import *
+
+mymodule.x
+mymodule.add(12,13)
+
+
+dir
+
+package
+
+
+	__init__.py
+
+
+
+Database :
+	mysql
+		
+		DDL		-->create alter drop trucate rename 
+		DMl		-->insert,update,delete
+		DRL		-->select
+create database kpmg;
+#DDL
+use kpmg;
+create table emps(eid int,ename varchar(20),esal float,edesg varchar(20));
+alter table emps add address varchar(20);
+alter table emps drop address;
+alter table emps change eid empno int; 
+alter table emps rename employees;
+truncate table employees;
+drop table employees;
+#Dml
+#insert,update,delete
+insert into emps values(123,'suresh',9000,'admin');
+insert into emps values(124,'naresh',43000,'hr');
+insert into emps values(125,'ramesh',12000,'developer');
+insert into emps values(126,'rajesh',99800,'hr');
+insert into emps values(128,'mahesh',45000,'ceo');
+update emps set esal=esal+1000;
+update emps set esal=esal+10000 where ename='suresh';
+delete from emps;
+delete from emps where eid=123;
+
+select * from emps;
+select eid from emps;
+select eid,ename from emps;
+select * from emps where esal between 10000 and 50000; 
+select max(esal) from emps;
+select min(esal) from emps;
+select avg(esal) from emps;
+select count(esal) from emps;
+select sum(esal) from emps;
+select sum(esal),edesg from emps group by edesg;
+select * from emps order by esal;#desc
+#constraints
+#check,notnull,unique,primary key,fk
+#pk=unique+notnull
+
+use kpmg;
+create table employees(eid int primary key,ename varchar(20) check(length(ename)>6),esal float not null,edesg varchar(20));
+
+insert into employees(ename,esal,edesg) values('sureshkumar',9000,'admin');
+insert into emps(ename,esal,edesg) values('sureshkumar',9000,'admin');
+
+
+
+PDBC
+	
+	
+		python---->Database
+
+		PIP install packagename 
+		PIP install packagename 
+		
+pip install mysql-connector-python
+pip install oracle
+
+
+	ABC
+		xyz
+			mymodule.py
+		
+	
+Test.py
+import ABC.xyz.
+
+
+
+
+		
 				
