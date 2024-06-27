@@ -867,7 +867,107 @@ Test.py
 import ABC.xyz.
 
 
+Create login application using pdbc
+
+	1.Register		(username,password,name)-->insert-->gmail
+	2.Login			(username,password)-->select-->Login Success/Enter valid credentials
+
+Excel:
+=======	
+		openpyxl
+		
+		WorkBook
+
+
+PIP install openpyxl
+
+klsx
+
+		-->header
+		-->column type of cell
+
+
+	Webservices:
+	============
+		SOA
+		
+		to share info between two INTEROPERABLE applications
+		
+		
+		ATM 
+
+REST
+		rest endpoints
+
+
+		urllib3
+		
+				get,post,put,delete
+
+			python---->java
+				get,post.....
+			
+		
+			py --->database(mysql)
+			
+			
+		Bank App
+
+			1.create account		--->account-->db
+			2.view balance			--->accountno-->
+			3.deposit				+					txn
+			4.withdraw				-
+			5.transfer				+ -
+			6.print transaction
+			
+			
+			
+			
+		ProductManagement	APP
+								(generate it),alphabets above 1000
+			1.Add Product		(productId,productName,productPrice,productCategory,description)
+			
+			2.update product	all fields except productid
+			
+			3.delete product	delete product by taking
+			
+			4.get product byid   return product if id is matched else raise ProductNotFound error
+			
+			5.get All products		return all products
+			
+			6.get All products by category
+			
+			7.get All products between prices
+			
+			ProductNotFoundError , InvalidProductPrice
+			
+	
+Logging:
+========	
+
+		Logging
+
+Critical
+Error
+Warning
+info
+debug
+	
+	basicConfig(filename="log.txt",level=Logging.WARNING)
+
+
+
+def sayHelllo(name):
+	def display():
+		print('hello',name)
+	display()
+	
+sayHelllo("sandeep")
+	
+	
+
+
+
 
 
 		
-				
