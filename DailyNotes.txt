@@ -937,7 +937,7 @@ REST
 			
 			6.get All products by category
 			
-			7.get All products between prices
+			7.get All products between prices				logger,validations,exception handling 
 			
 			ProductNotFoundError , InvalidProductPrice
 			
@@ -965,6 +965,40 @@ def sayHelllo(name):
 sayHelllo("sandeep")
 	
 	
+
+debugging:
+============
+		pdb
+pdb.set_trace()
+
+		breakpoint()
+
+
+	bdb
+
+numpy:
+=======
+	array-->list
+		numerical python  -->2005
+
+	pip install numpy
+	pip install pandas
+	
+
+
+
+
+
+
+numpy
+
+pandas
+		
+		series  -1 d array
+		
+		dataframe
+		
+
 
 
 
